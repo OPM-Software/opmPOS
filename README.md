@@ -1,14 +1,6 @@
 # Sistema Control de Inventario y Punto de Venta
 Sistema Control de Inventarios y PDV
 
-## Login
-
-![alt text](https://github.com/Open-Source-Mexico/opmPOS/blob/master/PDV/Login.png?raw=true)
-
-## Ventas
-
-![alt text](https://github.com/Open-Source-Mexico/opmPOS/blob/master/PDV/Home.png?raw=true)
-
 ## Prerequisitos
 
  - Java 1.8 
@@ -39,3 +31,19 @@ Ejemplo
 En eclipse seria de la siguiente manera
     ![image](https://user-images.githubusercontent.com/24512671/124346593-67a6bf00-dba5-11eb-9fa3-67f8f2433960.png)
 
+
+## Login
+
+![alt text](https://github.com/Open-Source-Mexico/opmPOS/blob/master/PDV/Login.png?raw=true)
+
+## Ventas
+
+![alt text](https://github.com/Open-Source-Mexico/opmPOS/blob/master/PDV/Home.png?raw=true)
+
+### Usuarios de Sesion
+
+  - Usuario: admin
+    - Contraseña:123
+  
+  - Usuario: cajero
+    - Contraseña: 456
