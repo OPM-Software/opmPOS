@@ -11,13 +11,14 @@ Sistema Control de Inventarios y PDV
 
 ## Prerequisitos
 
-Java 1.8 
-Maven 3.6.3
+ - Java 1.8 
+ - Maven 3.6.3
 
 
 ## Para Colaboradores.
 
 Como crear Fork y Hacer pull Request al proyecto
+
 https://www.youtube.com/watch?v=3m7Z3g_U-Cs
 
 ### Instalación
