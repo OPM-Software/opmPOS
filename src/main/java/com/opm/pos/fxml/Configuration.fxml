@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane"  prefHeight="559.0" prefWidth="1204.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.opm.pos.controllers.ConfigurationController">
+    <children>
+            <Label fx:id="lblFilter" layoutX="14.0" layoutY="9.0" prefHeight="40.0" prefWidth="106.0" style="-fx-font-weight: bold; -fx-font-size: 20;" text="Excel" />
+      <Button fx:id="btnImport" alignment="BASELINE_LEFT" layoutX="448.0" layoutY="8.0" mnemonicParsing="false" onAction="#importData" prefHeight="40.0" prefWidth="174.0" style="-fx-font-weight: bold;" text="Importar Datos">
+         <graphic>
+            <FontAwesomeIconView fill="#14e37f" glyphName="CHECK" size="3em" />
+         </graphic>
+      </Button>
+    </children>
+</AnchorPane>
