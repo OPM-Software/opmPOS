@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="564.0" prefWidth="1197.0" style="-fx-background-color: #FFF;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.opm.pos.controllers.HomeController">
+    <children>
+      <Label layoutX="5.0" layoutY="545.6" prefHeight="18.0" prefWidth="193.0" text="Omar Hernandez" AnchorPane.bottomAnchor="0.0" />
+      <Label layoutX="1095.0" layoutY="534.0" text="KheoPOS App" AnchorPane.bottomAnchor="0" AnchorPane.rightAnchor="0" />
+      <BorderPane fx:id="brdPane" layoutY="145.0" prefHeight="361.0" prefWidth="1197.0" AnchorPane.bottomAnchor="58.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="145.0" />
+      <GridPane prefHeight="108.0" prefWidth="997.0" style="-fx-background-color: #377BDC;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="192.60000610351562" minWidth="10.0" prefWidth="192.60000610351562" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="192.60000610351562" minWidth="10.0" prefWidth="192.60000610351562" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="192.60000610351562" minWidth="10.0" prefWidth="192.60000610351562" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="192.60000610351562" minWidth="10.0" prefWidth="192.60000610351562" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="192.60000610351562" minWidth="10.0" prefWidth="192.60000610351562" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="192.60000610351562" minWidth="10.0" prefWidth="192.60000610351562" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="71.20000305175782" minHeight="10.0" prefHeight="68.00000610351563" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="49.599996948242186" minHeight="10.0" prefHeight="40.79999389648437" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" prefHeight="68.0" prefWidth="173.0" style="-fx-font-size: 15;" text="Open Source Mexico" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="40.0" prefWidth="173.0" style="-fx-font-size: 15;" text="Sistema POS" textFill="WHITE" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnProds" alignment="BASELINE_CENTER" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="72.0" prefWidth="165.0" style="-fx-border-width: 0;" styleClass="custom-menu-button" stylesheets="@../styling/fullpackstyling.css" text="Productos" textFill="#377bdc" GridPane.columnIndex="2">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconProd" fill="#f7f4f4" glyphName="BARCODE" size="3em" />
+               </graphic></Button>
+            <Button fx:id="btnCustomers" alignment="BASELINE_CENTER" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="67.0" prefWidth="165.0" style="-fx-border-width: 0;" styleClass="custom-menu-button" stylesheets="@../styling/fullpackstyling.css" text="Clientes" GridPane.columnIndex="3">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconCustomer" fill="#f7f4f4" glyphName="BOOK" size="3em" />
+               </graphic></Button>
+            <Button fx:id="btnCredits" alignment="BASELINE_CENTER" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="70.0" prefWidth="165.0" style="-fx-border-width: 0;" styleClass="custom-menu-button" stylesheets="@../styling/fullpackstyling.css" text="Creditos" GridPane.columnIndex="4">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconCredits" fill="#f7f4f4" glyphName="BANK" size="3em" />
+               </graphic></Button>
+            <Button fx:id="btnSales" alignment="BASELINE_CENTER" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="66.0" prefWidth="165.0" style="-fx-border-width: 0;" styleClass="custom-menu-button" stylesheets="@../styling/fullpackstyling.css" text="Ventas" GridPane.columnIndex="1">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconSales" fill="#f7f4f4" glyphName="SHOPPING_CART" size="3em" />
+               </graphic></Button>
+            <Button fx:id="btnSetup" alignment="BASELINE_CENTER" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="66.0" prefWidth="172.0" style="-fx-border-width: 0;" styleClass="custom-menu-button" stylesheets="@../styling/fullpackstyling.css" text="Configuracion" GridPane.columnIndex="5">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconSetting" fill="#f7f4f4" glyphName="COGS" size="3em" />
+               </graphic></Button>
+         </children>
+      </GridPane>
+      <GridPane layoutX="980.0" prefHeight="108.0" prefWidth="200.0" style="-fx-background-color: #377BDC;" AnchorPane.rightAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="81.80000915527344" minHeight="10.0" prefHeight="71.2" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="54.59999694824218" minHeight="10.0" prefHeight="37.60000000000001" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btnExit" alignment="BASELINE_RIGHT" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="70.0" prefWidth="110.0" style="-fx-border-width: 0;" styleClass="custom-menu-button" stylesheets="@../styling/fullpackstyling.css" text="Salir" textAlignment="RIGHT" GridPane.columnIndex="1">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconExit" fill="#ece9e9" glyphName="SIGN_OUT" size="3em" />
+               </graphic></Button>
+         </children>
+      </GridPane>
+      <Label fx:id="lblTitle" alignment="BASELINE_RIGHT" contentDisplay="RIGHT" layoutY="108.0" prefHeight="34.0" prefWidth="200.0" style="-fx-font-size: 30; -fx-font-weight: bold;" textFill="#377bdc" AnchorPane.rightAnchor="50.0" />
+    </children>
+</AnchorPane>

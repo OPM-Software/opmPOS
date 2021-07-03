@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="564.0" prefWidth="1197.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.opm.pos.controllers.modal.ListProductController">
+    <children>
+            <Label fx:id="lblFilter" layoutX="14.0" layoutY="12.0" prefHeight="32.0" prefWidth="39.0" text="Filtro" />
+		    <TextField fx:id="txtFilter" layoutX="53.0" layoutY="13.0" prefHeight="32.0" prefWidth="318.0" promptText="serie / Descripcion" />
+	        <TableView fx:id="tblData" layoutY="53.0" prefHeight="507.0" prefWidth="1197.0" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="53.0">
+	            <columnResizePolicy>
+	                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+	            </columnResizePolicy>
+	        </TableView>
+      <ButtonBar layoutX="3.0" layoutY="114.0" prefHeight="40.0" prefWidth="106.0" />
+    </children>
+</AnchorPane>
